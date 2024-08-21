@@ -50,11 +50,31 @@ public class javaEx01 {
 		int num = sc.nextInt();
 		
 		if(num%2==0) {
-			System.out.println(num);
+			System.out.println(num + "짝");
 			
 		} else {
-			System.out.println(num);
+			System.out.println(num + "홀");
 		}
+		
+		if(num < 10) System.out.println(num+"한 자");
+		else if(num < 100) System.out.println(num+"두자리");
+		else if(num < 1000) System.out.println(num+"세자리");
+	
+		//switch
+		switch(num) { // 변수의 값은 프리미티브 타입
+		case 1 : System.out.println("일");
+			break;
+		case 2 : System.out.println("이");
+			break;
+		default :
+			System.out.println("x");
+			break;
+		} //end of switch
+		
+		// 반복붐
+		// for : 고정된 횟수만큼
+		// while문 : 조건식이 참인동안 반복
+		// do - while문 : 코드 블록을 먼저 실행, 조건식이 참이면 반복 실행
 		
 		
 	}
